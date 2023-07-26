@@ -1,12 +1,12 @@
-## Hi there 👋
+<p align="center">
+  <img width="400" height="auto" src="https://github.com/ETARA-Benchmark-System/.github/assets/4719393/498ff87b-a3cb-43d2-ac45-bd5a161bdf1f">
+</p>
 
-<!--
+# ETARA - Evaluation Toolkit for API and RDF Alignment
+ETARA (Evaluation Toolkit for API and RDF Alignment) is a toolkit to support the development and configuration of appropriate alignment tools. Furthermore, the toolkit offers a detailed benchmark to evaluate existing alignment systems and to determine their strengths and weaknesses more precisely. Existing benchmark systems, e.g. MELT, SEALS and HOBBIT, focus only on data sets of the same format. In contrast, ETARA enables the simulation and creation of RESTful Web APIs with the common response formats (e.g., XML and JSON). It provides a variety of existing Web APIs and their response formats such as CrossRef, SciGraph, ArXiv and Semantic Scholar.
 
-**Here are some ideas to get you started:**
+# Important Links
+* Quick Start
+* Documentation
+* Data Sets
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
