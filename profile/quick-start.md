@@ -9,7 +9,7 @@ The ETARA benchmark system provides nine different data sets of bibliographic an
 
 The filmographic set contains meta data of movies created between 2000 and 2020 and covers samples from Linked Movie Database, Open Movie Database and The Movie Database. The data sets cover titles, release dates, actor names, director names and others. For legal reasons information about the movie plot are not provided in the data sets.
 
-*Downloads*
+**Downloads**
 * Bibliographic Data Sets: [[cloud](https://www.startpage.com)] [[zenodo](https://www.startpage.com)]
 * Filmographic Data Sets: [[cloud](https://www.startpage.com)] [[zenodo](https://www.startpage.com)]
 
@@ -34,5 +34,5 @@ The ETARA Hub is a repository that provides several different categories of Web 
 
 We would like to encourage all users of the ETARA Benchmark System to add the API configurations developed for their own tests to the repository and make them available for other developers and researchers. 
 
-*Downloads*
+**Downloads**
 * Api Configurations: [[hub](https://www.startpage.com)] [[zenodo](https://www.startpage.com)]
