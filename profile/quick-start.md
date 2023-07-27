@@ -30,7 +30,7 @@ Figure 1 presents an exemplary overview of all databases registered in the ETARA
 After users have registered their databases, they can be used to simulate Web APIs. In order to use ETARA as quickly as possible, only a short overview is given in the following. The ETARA benchmark system provides 42 API configurations, including response templates with different structures and granularity. Moreover, many of the provided templates are based on real world APIs, like ArXiv, CrossRef, Semantic Scholar, Springer Nature, Open Movie Database and The Movie Database. More information about the provided data and response templates can be found [here](/profile/documentation.md).
 
 ### Download Configurations (ETARA Hub)
-The ETARA Hub is a repository that provides several different categories of Web API configurations, e.g. for bibliographic APIs like CrossRef, for filmographic APIs like the Open Movie Database, more complex JSON response structures, API configurations that respond to request errors with an HTTP status code, and much more. More information about the ETARA Hub can be found [here](/profile/documentation.md).
+The ETARA Hub is a repository that provides several different categories of Web API configurations, e.g. for bibliographic APIs like CrossRef, for filmographic APIs like the Open Movie Database, more complex JSON response structures, API configurations that respond to request errors with an HTTP status code, and much more. More information about the ETARA Hub can be found [here](/profile/etara-hub.md).
 
 We would like to encourage all users of the ETARA Benchmark System to add the API configurations developed for their own tests to the repository and make them available for other developers and researchers. 
 
