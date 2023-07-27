@@ -1,5 +1,4 @@
 # Quick Start
-
 In order to run ETARA several configurations must be done first. The cloned project has to be opened (currently) in an IDE of your choice. This step will be replaced soon by simply providing an executable jar file. Afterwards, two steps need to be performed: (1) Creating access to the used data sources and (2) providing initial configurations to simulate Web APIs, i.e., response templates, data sources and more.
 
 ## Creating Access to Data Sources
@@ -20,6 +19,12 @@ To simulate APIs, several requirements needs to be met. First, ETARA needs acces
 | ![dbs](https://github.com/ETARA-Benchmark-System/.github/assets/4719393/ab13f208-ffdf-440e-b8d4-0938b09d8e69) | 
 |:--:| 
 | *Figure 1: Overview of Databases* |
+
+Figure 1 presents an exemplary overview of all databases registered in the ETARA system. In the overview some (but not all) information of each database is displayed. First, the name or label of the database is displayed. This represents the unique name of the database in the system and is used to reference it, e.g., if a simulated API will use it as a data source. Moreover, it displays the location of the stored index and the identifier map, which will be explained in detail in the next section. If a user clicks the edit button, the detail view is displayed, which is shown in Figure 2.
+
+| To be inserted | 
+|:--:| 
+| *Figure 2: Detailed View of a Registered Database* |
 
 ## Download and Use Initial Configurations
 After users have registered their databases, they can be used to simulate Web APIs. 
