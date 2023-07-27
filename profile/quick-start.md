@@ -18,13 +18,13 @@ To simulate APIs, several requirements needs to be met. First, ETARA needs acces
 
 | ![dbs](https://github.com/ETARA-Benchmark-System/.github/assets/4719393/ab13f208-ffdf-440e-b8d4-0938b09d8e69) | 
 |:--:| 
-| *Figure 1: Overview of Databases* |
+| **Figure 1:** Overview of Databases |
 
 Figure 1 presents an exemplary overview of all databases registered in the ETARA system. In the overview some (but not all) information of each database is displayed. First, the name or label of the database is displayed. This represents the unique name of the database in the system and is used to reference it, e.g., if a simulated API will use it as a data source. Moreover, it displays the location of the stored index and the identifier map, which will be explained in detail in the next section. If a user clicks the edit button, the detail view is displayed, which is shown in Figure 2.
 
 | To be inserted | 
 |:--:| 
-| *Figure 2: Detailed View of a Registered Database* |
+| **Figure 2:** Detailed View of a Registered Database |
 
 ## Download and Use Initial Configurations
 After users have registered their databases, they can be used to simulate Web APIs. In order to use ETARA as quickly as possible, only a short overview is given in the following. The ETARA benchmark system provides 42 API configurations, including response templates with different structures and granularity. Moreover, many of the provided templates are based on real world APIs, like ArXiv, CrossRef, Semantic Scholar, Springer Nature, Open Movie Database and The Movie Database. More information about the provided data and response templates can be found [here](/profile/documentation.md).
@@ -36,3 +36,27 @@ We would like to encourage all users of the ETARA Benchmark System to add the AP
 
 **Downloads**
 * Api Configurations: [[hub](https://www.startpage.com)] [[zenodo](https://www.startpage.com)]
+
+### Import of Configurations
+
+### Short Explanation of a Web API Configuration 
+| To be inserted | 
+|:--:| 
+| **Figure 3:** General API Configuration Options |
+
+| To be inserted | 
+|:--:| 
+| **Figure 4:** Advanced Configuration Options |
+
+## Start ETARA
+After all configurations have been imported, ETARA can be executed using an IDE (for example IntelliJ or Eclipse) or the executable JAR file. After running ETARA, all imported API configurations are then started and simulated. An example of such a simulation can be seen in the following screenshot.
+
+| To be inserted | 
+|:--:| 
+| **Figure 5:** Start via Console |
+
+The simulated APIs are located under the base domain http://localhost:8080 and can be requested via the respective paths, for example http://localhost:8080/webservices/a0/work. Executing a GET request (for example http://localhost:8080/webservices/a0/work?orcid=0000-0003-2514-9306) causes the simulated API a0 to issue a query to the database used, parse the query result and respond according to the template specifications. An example of such a response looks like the following:
+
+| To be inserted | 
+|:--:| 
+| **Figure 6:** Start via Console |
