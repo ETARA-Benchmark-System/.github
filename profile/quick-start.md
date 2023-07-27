@@ -12,7 +12,7 @@ The filmographic set contains meta data of movies created between 2000 and 2020 
 
 *Downloads*
 * Bibliographic Data Sets: [[cloud](https://www.startpage.com)] [[zenodo](https://www.startpage.com)]
-* Filmographic Data Sets: [cloud](#) [zenodo](#)
+* Filmographic Data Sets: [[cloud](https://www.startpage.com)] [[zenodo](https://www.startpage.com)]
 
 ### Registering Data Sources
 To simulate APIs, several requirements needs to be met. First, ETARA needs access to databases that represent the pool of available data for the simulated APIs. Currently, ETARA is only able to process RDF databases, but this aspect will be extended in the future. By registering a database, ETARA can access it and allow the simulated APIs to access the data and respond to requests with actual data. 
@@ -22,4 +22,4 @@ To simulate APIs, several requirements needs to be met. First, ETARA needs acces
 | *Figure 1: Overview of Databases* |
 
 ## Download and Use Initial Configurations
-To be done..
+After users have registered their databases, they can be used to simulate Web APIs. 
