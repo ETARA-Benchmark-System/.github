@@ -40,8 +40,11 @@ We would like to encourage all users of the ETARA Benchmark System to add the AP
 * Api Configurations: [[hub](https://www.startpage.com)] [[zenodo](https://www.startpage.com)]
 
 ### Import of Configurations
+To be done
 
 ### Short Explanation of a Web API Configuration 
+To be done
+
 | ![api_overview](https://github.com/ETARA-Benchmark-System/.github/assets/4719393/42aec325-1d93-4516-8192-309c867becfb) |
 |:--:| 
 | **Figure 3:** Overview of Simulated API Configurations |
