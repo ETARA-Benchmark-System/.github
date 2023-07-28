@@ -10,5 +10,6 @@ The filmographic set contains meta data of movies created between 2000 and 2020 
 * Filmographic Data Sets: [[cloud](https://basilika.uni-trier.de/nextcloud/s/sGS86e2WGANayzz)] [[zenodo](https://www.startpage.com)]
 
 ## Response Templates and API Configurations
+The ETARA benchmark system provides 42 API configurations, including response templates with different structures and granularity. Moreover, many of the provided templates are based on real world APIs, like ArXiv, CrossRef, Semantic Scholar, Springer Nature, Open Movie Database and The Movie Database.
 
 ## ETARA Executables
