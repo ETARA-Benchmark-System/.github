@@ -18,3 +18,7 @@ The ETARA Hub is a repository that provides several different categories of Web 
 * Api Configurations: [[hub](https://github.com/ETARA-Benchmark-System/ETARA-Hub)]
 
 ## ETARA Executables
+ETARA is also as executable JAR file available. You can find all published versions of ETARA following the link down below.
+
+**Downloads**
+* JAR Files: [[cloud](https://basilika.uni-trier.de/nextcloud/s/XBZiokz7s5sZaBa)]
