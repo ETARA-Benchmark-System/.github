@@ -10,8 +10,8 @@ The ETARA benchmark system provides nine different data sets of bibliographic an
 The filmographic set contains meta data of movies created between 2000 and 2020 and covers samples from Linked Movie Database, Open Movie Database and The Movie Database. The data sets cover titles, release dates, actor names, director names and others. For legal reasons information about the movie plot are not provided in the data sets.
 
 **Downloads**
-* Bibliographic Data Sets: [[cloud](https://www.startpage.com)] [[zenodo](https://www.startpage.com)]
-* Filmographic Data Sets: [[cloud](https://www.startpage.com)] [[zenodo](https://www.startpage.com)]
+* Bibliographic Data Sets: [[cloud](https://basilika.uni-trier.de/nextcloud/s/jwzxYgJ6Bp8K8Rz)] [[zenodo](https://www.startpage.com)]
+* Filmographic Data Sets: [[cloud](https://basilika.uni-trier.de/nextcloud/s/sGS86e2WGANayzz)] [[zenodo](https://www.startpage.com)]
 
 ### Registering Data Sources
 To simulate APIs, several requirements needs to be met. First, ETARA needs access to databases that represent the pool of available data for the simulated APIs. Currently, ETARA is only able to process RDF databases, but this aspect will be extended in the future. By registering a database, ETARA can access it and allow the simulated APIs to access the data and respond to requests with actual data. 
