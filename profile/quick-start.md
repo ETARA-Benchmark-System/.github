@@ -40,32 +40,38 @@ We would like to encourage all users of the ETARA Benchmark System to add the AP
 * Api Configurations: [[hub](https://www.startpage.com)] [[zenodo](https://www.startpage.com)]
 
 ### Import of Configurations
-To be done
+At the current time, it is unfortunately not possible to import predefined Web API configurations via ETARA's web interface. Instead, the configurations have to be copied into the correct folders of the ETARA project. The following image shows an overview of all ETARA project files.
+
+| ![etara_files](https://github.com/ETARA-Benchmark-System/.github/assets/4719393/81116086-2a4f-49ad-a24a-89ee61b78b18) |
+|:--:| 
+| **Figure 3:** Overview of ETARA Project Files |
+
+The ETARA project files consist of three folders (`client`, `configs` and `res`), a file to customize various startup configurations and an executable JAR file. For this part, we will only discuss the `client` folder in more detail. More information about ETARAs project files can be found [here](documentation.md). All Web API configurations downloaded from ETARA Hub must be moved to the `configs\webservices\` folder to be recognized by ETARA as Web APIs to be simulated. Afterwards, all further configurations can be done via ETARA's web interface again. 
 
 ### Short Explanation of a Web API Configuration 
 To be done
 
 | ![api_overview](https://github.com/ETARA-Benchmark-System/.github/assets/4719393/42aec325-1d93-4516-8192-309c867becfb) |
 |:--:| 
-| **Figure 3:** Overview of Simulated API Configurations |
+| **Figure 4:** Overview of Simulated API Configurations |
 
 | ![detailed_api](https://github.com/ETARA-Benchmark-System/.github/assets/4719393/0d386b6f-ec02-4fba-aa67-0be4313a6766) |
 |:--:| 
-| **Figure 4:** General API Configuration Options |
+| **Figure 5:** General API Configuration Options |
 
 | ![advanced_api](https://github.com/ETARA-Benchmark-System/.github/assets/4719393/3cdb9202-dd25-4fbb-bf12-e2840b09301b) |
 |:--:| 
-| **Figure 5:** Advanced Configuration Options |
+| **Figure 6:** Advanced Configuration Options |
 
 ## Start ETARA
 After all configurations have been imported, ETARA can be executed using an IDE (for example IntelliJ or Eclipse) or the executable JAR file. After running ETARA, all imported API configurations are then started and simulated. An example of such a simulation can be seen in the following screenshot.
 
 |  ![etara_start](https://github.com/ETARA-Benchmark-System/.github/assets/4719393/7f7b43cc-9f5e-4516-8196-cb5186f3cd6f) |
 |:--:| 
-| **Figure 6:** Start via Console |
+| **Figure 7:** Start via Console |
 
 The simulated APIs are located under the base domain `http://localhost:8080` and can be requested via the respective paths, for example `http://localhost:8080/webservices/crossref/work`. Executing a GET request (for example `http://localhost:8080/webservices/crossref/work?q=10.1007/s11192-013-0954-3`) causes the simulated version of the crossref API to issue a query to the database used, parse the query result and respond according to the template specifications. An example of such a response looks like the following:
 
 | ![response_example](https://github.com/ETARA-Benchmark-System/.github/assets/4719393/e1df3159-8b92-4e62-8dcb-e062bf097e6e) |
 |:--:| 
-| **Figure 7:** Web API Response Example |
+| **Figure 8:** Web API Response Example |
