@@ -12,4 +12,9 @@ The filmographic set contains meta data of movies created between 2000 and 2020 
 ## Response Templates and API Configurations
 The ETARA benchmark system provides 42 API configurations, including response templates with different structures and granularity. Moreover, many of the provided templates are based on real world APIs, like ArXiv, CrossRef, Semantic Scholar, Springer Nature, Open Movie Database and The Movie Database.
 
+The ETARA Hub is a repository that provides several different categories of Web API configurations, e.g. for bibliographic APIs like CrossRef, for filmographic APIs like the Open Movie Database, more complex JSON response structures, API configurations that respond to request errors with an HTTP status code, and much more. More information about the ETARA Hub can be found [here](etara-hub.md).
+
+**Downloads**
+* Api Configurations: [[hub](https://github.com/ETARA-Benchmark-System/ETARA-Hub)]
+
 ## ETARA Executables
