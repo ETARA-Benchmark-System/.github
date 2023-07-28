@@ -84,8 +84,8 @@ After all configurations have been imported, ETARA can be executed using an IDE 
 |:--:| 
 | **Figure 7:** Start via Console |
 
-The simulated APIs are located under the base domain `http://localhost:8080` and can be requested via the respective paths, for example `http://localhost:8080/webservices/crossref/work`. Executing a GET request (for example `http://localhost:8080/webservices/crossref/work?q=10.1007/s11192-013-0954-3`) causes the simulated version of the crossref API to issue a query to the database used, parse the query result and respond according to the template specifications. An example of such a response looks like the following:
+The simulated APIs are located under the base domain `http://localhost:8080` and can be requested via the respective paths, for example `http://localhost:8080/webservices/testapi1/work`. Executing a GET request (for example `http://localhost:8080/webservices/testapi1/work?doi=10.1007/s11192-013-0954-3`) causes the simulated API a0 to issue a query to the database used, parse the query result and respond according to the template specifications. An example of such a response looks like the following:
 
-| ![response_example](https://github.com/ETARA-Benchmark-System/.github/assets/4719393/e1df3159-8b92-4e62-8dcb-e062bf097e6e) |
+| ![response_example](https://github.com/ETARA-Benchmark-System/.github/assets/4719393/73e7240c-5438-43f5-8bfc-21566b94ccbb) |
 |:--:| 
 | **Figure 8:** Web API Response Example |
