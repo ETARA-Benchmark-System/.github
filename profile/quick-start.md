@@ -37,7 +37,7 @@ The ETARA Hub is a repository that provides several different categories of Web 
 We would like to encourage all users of the ETARA Benchmark System to add the API configurations developed for their own tests to the repository and make them available for other developers and researchers. 
 
 **Downloads**
-* Api Configurations: [[hub](https://www.startpage.com)] [[zenodo](https://www.startpage.com)]
+* Api Configurations: [[hub](https://github.com/ETARA-Benchmark-System/ETARA-Hub)]
 
 ### Import of Configurations
 At the current time, it is unfortunately not possible to import predefined Web API configurations via ETARA's web interface. Instead, the configurations have to be copied into the correct folders of the ETARA project. The following image shows an overview of all ETARA project files.
