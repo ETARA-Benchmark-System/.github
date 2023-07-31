@@ -1,7 +1,8 @@
 # Documentation
-* Introduction
+* [Introduction](https://github.com/ETARA-Benchmark-System/.github/blob/main/profile/introduction.md)
 
 ## ETARA Configurations
+* [Component Overview](#)
 * Global Configuration
 * RDF Database Management
 * Web API Simulation Management
