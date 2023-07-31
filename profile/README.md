@@ -6,7 +6,7 @@
 ETARA (Evaluation Toolkit for API and RDF Alignment) is a toolkit to support the development and configuration of appropriate alignment tools. Furthermore, the toolkit offers a detailed benchmark to evaluate existing alignment systems and to determine their strengths and weaknesses more precisely. Existing benchmark systems, e.g. MELT, SEALS and HOBBIT, focus only on data sets of the same format. In contrast, ETARA enables the simulation and creation of RESTful Web APIs with the common response formats (e.g., XML and JSON). It provides a variety of existing Web APIs and their response formats such as CrossRef, SciGraph, ArXiv and Semantic Scholar.
 
 # Important Links
-* [Quick Start](profile/quick-start.md)
-* [Documentation](profile/documentation.md)
-* [Downloads](profile/downloads.md)
+* [Quick Start](https://github.com/ETARA-Benchmark-System/.github/blob/main/profile/quick-start.md)
+* [Documentation](https://github.com/ETARA-Benchmark-System/.github/blob/main/profile/profile/documentation.md)
+* [Downloads](https://github.com/ETARA-Benchmark-System/.github/blob/main/profile/downloads.md)
 
