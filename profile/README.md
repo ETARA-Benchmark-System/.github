@@ -7,6 +7,6 @@ ETARA (Evaluation Toolkit for API and RDF Alignment) is a toolkit to support the
 
 # Important Links
 * [Quick Start](https://github.com/ETARA-Benchmark-System/.github/blob/main/profile/quick-start.md)
-* [Documentation](https://github.com/ETARA-Benchmark-System/.github/blob/main/profile/profile/documentation.md)
+* [Documentation](https://github.com/ETARA-Benchmark-System/.github/blob/main/profile/documentation.md)
 * [Downloads](https://github.com/ETARA-Benchmark-System/.github/blob/main/profile/downloads.md)
 
