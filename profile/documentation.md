@@ -3,14 +3,12 @@
 
 ## ETARA Configurations
 * [Component Overview](https://github.com/ETARA-Benchmark-System/.github/blob/main/profile/component_overview.md)
-* Global Configuration
-* RDF Database Management
+* [Database Management](https://github.com/ETARA-Benchmark-System/.github/blob/main/profile/database_management.md)
 * Web API Simulation Management
+* Gold Standard Builder
+* Alignment Cube
 
 ## Downloads
 * [RDF Datbase Downloads](downloads.md)
 * [ETARA Hub](etara-hub.md)
 
-## Evaluation
-* Gold Standard Builder
-* Alignment Cube
