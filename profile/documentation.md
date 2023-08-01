@@ -10,6 +10,6 @@
 * Alignment Cube
 
 ## Downloads
-* [RDF Datbase Downloads](downloads.md)
+* [Provided Datasets (Download)](downloads.md)
 * [ETARA Hub](etara-hub.md)
 
