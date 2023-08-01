@@ -19,11 +19,12 @@ Figure 2 shows an example of all configuration options that ETARA provides. Afte
 
 The most complex configuration is to make valid (SPARQL) queries to the database, extract desired information and insert it into the given response template. For this purpose, users can specify one or more triple patterns that are used to identify a subject in the database (see marker 7). In the example shown in Figure 2, the database *sample_crossref* is searched for a subject that has a relation named *doi* and refers to the value of the parameter named *doi*. The found subject (an entity) is then used to fill the response template, using Apache FreeMarker, with information about the entity (e.g. the title of a publication). A detailed explanation of FreeMarker can be found [here](documentation.md).
 
+## Advanced Configurations
+In addition to the classic configuration options such as rate limit or latency, users are able to control more complex behaviors of APIs. The "Search Type" option in Figure 3 specifies the search method to be used. There are two search options to choose from: *precise* and *fuzzy*.
+
 | ![advanced_api](https://github.com/ETARA-Benchmark-System/.github/assets/4719393/3cdb9202-dd25-4fbb-bf12-e2840b09301b) |
 |:--:| 
 | **Figure 3:** Advanced Configuration Options |
-
-In addition to the classic configuration options such as rate limit or latency, users are able to control more complex behaviors of APIs. The "Search Type" option in Figure 3 specifies the search method to be used. There are two search options to choose from: *precise* and *fuzzy*.
 
 The *precise* parameter sets APIs to only return data that was requested. For example, if an API receives a request containing an arxiv ID, the corresponding publication is searched. If it exists, the found publication entity is forwarded to the response template as described before. However, if no publication with the searched ID exists, no result can be returned. 
 
