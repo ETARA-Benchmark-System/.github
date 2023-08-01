@@ -1,5 +1,5 @@
 # Web API Simulation Management
-TO BE DONE
+This section will present the individual tools needed to simulate a Web API with all its characteristics. First, an overview of all possible functionalities related to Simulated Web APIs is given. Then we will explain in detail how to create a simulated Web API and which settings can be made. Finally, we will discuss the possibility of creating your own response templates using [Apache FreeMaker](https://freemarker.apache.org/index.html).  
 
 ## Overview
 After users have registered their databases and have imported some predefined Web API configurations, they can be used to simulate APIs. Figure 4 shows a short overview of all simulated Web APIs, i.e., their labels, the web path under which they can be accessed, their status and an overview of all possible actions.
