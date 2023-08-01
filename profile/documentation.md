@@ -4,7 +4,8 @@
 ## ETARA Configurations
 * [Component Overview](https://github.com/ETARA-Benchmark-System/.github/blob/main/profile/component_overview.md)
 * [Database Management](https://github.com/ETARA-Benchmark-System/.github/blob/main/profile/database_management.md)
-* Web API Simulation Management
+* [Web API Simulation Management](https://github.com/ETARA-Benchmark-System/.github/blob/main/profile/api_management.md)
+* External Web API Management
 * Gold Standard Builder
 * Alignment Cube
 
