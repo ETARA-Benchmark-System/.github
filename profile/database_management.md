@@ -22,4 +22,7 @@ The access to the raw data is needed for two reasons (1) The Gold Standard Build
 |:--:| 
 | **Figure 3:** Example of an Identifier Map |
 
-Typically, the suffix specifies the keyword, but this can be renamed by the user, e.g. GNDID or ACMID in Figure 3. The identifier map is only created when ETARA is run for the first time, if it does not already exist. The identifier map is needed later to fill the response templates of the simulated APIs with data. For example, to specify that a title should be included in a JSON response, simply use the keyword `title` instead of the long URL `<http://example/com/crossref/title>`.
+Typically, the suffix specifies the keyword, but this can be renamed by the user, e.g. GNDID or ACMID in Figure 3. The identifier map is only created when ETARA is run for the first time, if it does not already exist. The identifier map is needed later to fill the response templates of the simulated APIs with data. For example, to specify that a title should be included in a JSON response, simply use the keyword `title` instead of the long URL `<http://example/com/crossref/title>`. More about identifier map and response templates can be read in the next section.
+
+---
+[Next: Web API Simulation Management](https://github.com/ETARA-Benchmark-System/.github/blob/main/profile/api_management.md)
