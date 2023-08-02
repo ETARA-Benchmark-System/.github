@@ -6,7 +6,7 @@
 * [Database Management](https://github.com/ETARA-Benchmark-System/.github/blob/main/profile/database_management.md)
 * [Web API Simulation Management](https://github.com/ETARA-Benchmark-System/.github/blob/main/profile/api_management.md)
 * [External Web API Management](https://github.com/ETARA-Benchmark-System/.github/blob/main/profile/external_management.md)
-* Gold Standard Builder
+* [Gold Standard Builder](https://github.com/ETARA-Benchmark-System/.github/blob/main/profile/gs_builder.md)
 * [Alignment Cube](https://github.com/ETARA-Benchmark-System/.github/blob/main/profile/alignment_cube.md)
 
 ## Downloads
