@@ -52,3 +52,6 @@ Besides if conditions, there are of course other control structures like loops. 
 | **Figure 5:** Example of a Built Ins (split()) |
 
 For example there are Built-Ins to check if strings start with a certain prefix, if substrings are contained and more. Furthermore it is possible to manipulate the data itself, for example by using a split, trim or remove method as shown in Figure 5. Here, the name of an author (e.g., "Bob Miller") is split into parts (e.g., "Bob" and "Miller"). With the use of `keep_before` and `keep_after_last` we kan create a response template that distinguishes between first and last names. This gives the possibility to create various individual response structures with only one database.
+
+---
+[Next: External Web API Management](https://github.com/ETARA-Benchmark-System/.github/blob/main/profile/external_management.md)
