@@ -3,11 +3,11 @@ Alignment Cube allows an interactive visual exploration and evaluation of alignm
 
 ## Loading Alignments
 
-| |
+| ![alignment_selection](https://github.com/ETARA-Benchmark-System/.github/assets/4719393/a5c61d01-3858-47b2-ba2d-dbef50757d67) |
 |:--:| 
 | **Figure 1:** Selection of Gold Standard Alignments |
 
-| |
+| ![alignment_selection_3](https://github.com/ETARA-Benchmark-System/.github/assets/4719393/f2c0d78b-bb84-4e0e-ac41-c6c1b6d4a486) |
 |:--:| 
 | **Figure 2:** Uploading External Alignments |
 
