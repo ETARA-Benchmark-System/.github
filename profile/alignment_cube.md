@@ -13,6 +13,101 @@ Alignment Cube allows an interactive visual exploration and evaluation of alignm
 
 ## ETARAs Alignment Format
 
+```
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/alignment.schema.json",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "system":{
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "alignments": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/mapping"
+      }
+    }
+  },
+  "required": [
+    "name",
+    "alignments"
+  ],
+
+  "definitions": {
+    "mapping": {
+      "type": "object",
+      "properties": {
+        "api_path": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "relation_path": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/relationPath"
+          }
+        },
+        "metrics": {
+          "type": "object",
+          "patternProperties": {
+            "": {
+              "type": "number"
+            }
+          }
+        }
+      },
+      "required": [
+        "api_path",
+        "relation_path",
+        "metrics"
+      ]
+    },
+    "relationPath": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+```
+{
+    "system": "System A",
+    "alignments": [
+        {
+            "metrics": {"confidence": 1},
+            "relation_path": [{"path": ["https://dblp.org/rdf/schema-2020-07-01#title"]}],
+            "api_path": ["title"]
+        },
+        {
+            "metrics": {"confidence": 1},
+            "relation_path": [{"path": [
+                "https://dblp.org/rdf/schema-2020-07-01#publishedAsPartOf",
+                "https://dblp.org/rdf/schema-2020-07-01#title"
+            ]}],
+            "api_path": ["container-title"]
+        }
+    ],
+    "name": "System A: movieDb - movieApi"
+}
+```
+
 ## Basic Interpretation
 As described in detail by [Ivanova et al.](https://link.springer.com/chapter/10.1007/978-3-319-68288-4_24) two ontologies and their alignment can be seen as a bipartite network of mappings between individual concepts in two different ontologies. Hence, a matrix represents a single alignment between two ontologies/schemas. We have modified this definition slightly and consider rows as relations from an underlying RDF database and columns as paths in the JSON or XML responses of an API in our implementation. This change makes it easy to apply the principle behind alignment cubes to alignments between RDF databases and RESTful Web APIs. Stacking several matrices, i.e., several alignments, creates an Alignment Cube.
 
