@@ -21,6 +21,8 @@ The next phase is response preparation, shown in Figure 2, where the response sc
 ## Data Mapping
 The third and most significant phase (data mapping) provides a variety of functions (e.g., search/sort relation names, search/sort values, etc.) to find mappings between the data of a single entity from an RDF database and the response of an API. The selected entity is always chosen randomly from the RDF database to cover a wide variety of entities which leads to a wide range of possible mappings.
 
+TO BE DONE
+
 | ![mapping_phase](https://github.com/ETARA-Benchmark-System/.github/assets/4719393/4be17a3a-1956-43e6-aabe-c88bf71fdb2e) |
 |:--:| 
 | **Figure 3:** Mapping Phase |
