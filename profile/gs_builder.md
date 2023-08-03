@@ -21,17 +21,25 @@ The next phase is response preparation, shown in Figure 2, where the response sc
 ## Data Mapping
 The third and most significant phase (data mapping) provides a variety of functions (e.g., search/sort relation names, search/sort values, etc.) to find mappings between the data of a single entity from an RDF database and the response of an API. The selected entity is always chosen randomly from the RDF database to cover a wide variety of entities which leads to a wide range of possible mappings.
 
-TO BE DONE
-
-| ![mapping_phase](https://github.com/ETARA-Benchmark-System/.github/assets/4719393/4be17a3a-1956-43e6-aabe-c88bf71fdb2e) |
+| ![mapping_phase_components](https://github.com/ETARA-Benchmark-System/.github/assets/4719393/1431c38b-ba4d-4230-b222-86ca5a8b3fc8) |
 |:--:| 
 | **Figure 3:** Mapping Phase |
+
+As shown in Figure 3, the mapping component consists of three main sections: (1) the data that the RDF database stores for an entity, (2) the data that is sent as a response from the Web API, and (3) a section for creating mappings. In the upper section of the areas (1) and (2) options are given to sort the data (both the relation names and the values themselves) and to search for keywords. After two mappings are identified by the users, for example the relation `yearOfPublication` and `print-date`, they can specify the form of the mapping. 
+
+In principle, two types of mappings are distinguished: (1) equivalent mappings and (2) subsumption mappings. Equivalent mappings are easy to understand because, as the name suggests, they are mappings that store the same data. An example of this are the mappings `yearOfPublication` and `print-date` as well as `title` and `title` in Figure 3. To create such a mapping you only have to click on the two fields `yearOfPublication` and `print-date` and connect them via the middle arrow button in area (3). 
+
+Subsumption mappings are simply mappings between two relations that are not equivalent and contain only a subset of the information. For example, the RDF relation `label` in Figure 3 consists of author information, the title of the publication, and the year. There is no way to create an equivalent mapping on the JSON response side, but the value of `title` is part of `label` and therefore `label` can be said to subsume `title`. To create a subsumption mapping, users have the two arrow buttons on the left and right in area (3). This allows them to specify the "direction" of the mapping, for example whether `label` subsumed `title` (i.e., `<-`) or `title` subsumed `label` (i.e., `->`).
 
 | ![highlights](https://github.com/ETARA-Benchmark-System/.github/assets/4719393/7a222ee4-858c-4d96-814a-021a53243c6a) |
 |:--:| 
 | **Figure 4:** Highlighting New Relations |
 
+TO BE DONE
+
 ## Final Alignment Adjustments
+
+TO BE DONE
 
 | ![preliminary_alignment](https://github.com/ETARA-Benchmark-System/.github/assets/4719393/f6222d99-6831-441a-a043-1fdc59c83ab5) |
 |:--:| 
