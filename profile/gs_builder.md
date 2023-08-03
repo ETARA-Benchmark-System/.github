@@ -1,13 +1,25 @@
 # Gold Standard Builder
-TO BE DONE
+To evaluate automatically created alignments a GS alignment is required. Hence, ETARA provides a set of GS alignments for the given data sets and APIs. Moreover, it provides a component to support the creation of GS alignments. The GS builder consists of four delineated phases: (1) data selection, (2) response preparation, (3) data mapping and (4) final alignment adjustments.
+
+## Data Selection
+The first step is data selection, shown in Figure 1, is the selection of the RDF database that users want to align with a Web API. In the example shown in Figure 1, the dblp was chosen as RDF database. However, this option alone is not enough, because the choice of the Web API with which the dblp is aligned has some side effects. 
 
 | ![selection](https://github.com/ETARA-Benchmark-System/.github/assets/4719393/17795ac7-262e-410a-b354-0f919a6da47a) |
 |:--:| 
 | **Figure 1:** Data and Web API Selection |
 
+For example, you can see that in Figure 1 an API named "Simulated API for OM2023" has been selected as the Web API. This Web API expects DOIs from publications as a request and can then respond with various metadata in the form of a JSON response. In order for the "correct" data to be sent from the dblp as a request to the Web API, users must specify this information. In the example shown, it was selected that only entities with the type or class `Publication` should be used as requests. However, this specification alone is not selective enough, since other IDs such as ISBNs, arvix IDs and others can also be used for queries. Therefore, users must also specify an input relation that will be used to form the queries. In the example in Figure 1, the relation `P356`, which points to a DOI, is selected.
+
+## Response Preparation
+The next phase is response preparation, shown in Figure 2, where the response schema of a Web API is to be cleaned of irrelevant components, such as metadata about the request itself. The deleted components of the response are then removed from all requests to avoid burdening the gold standard designer with unnecessary information.
+
 | ![response_preparation](https://github.com/ETARA-Benchmark-System/.github/assets/4719393/795f0cbc-1c5b-46df-91d8-2d54864d9b45) |
 |:--:| 
 | **Figure 2:** Response Preparation |
+
+
+## Data Mapping
+The third and most significant phase (data mapping) provides a variety of functions (e.g., search/sort relation names, search/sort values, etc.) to find mappings between the data of a single entity from an RDF database and the response of an API. The selected entity is always chosen randomly from the RDF database to cover a wide variety of entities which leads to a wide range of possible mappings.
 
 | ![mapping_phase](https://github.com/ETARA-Benchmark-System/.github/assets/4719393/4be17a3a-1956-43e6-aabe-c88bf71fdb2e) |
 |:--:| 
@@ -16,6 +28,8 @@ TO BE DONE
 | ![highlights](https://github.com/ETARA-Benchmark-System/.github/assets/4719393/7a222ee4-858c-4d96-814a-021a53243c6a) |
 |:--:| 
 | **Figure 4:** Highlighting New Relations |
+
+## Final Alignment Adjustments
 
 | ![preliminary_alignment](https://github.com/ETARA-Benchmark-System/.github/assets/4719393/f6222d99-6831-441a-a043-1fdc59c83ab5) |
 |:--:| 
