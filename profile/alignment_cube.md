@@ -15,7 +15,7 @@ Figure 2 shows an overview of the loaded alignments. It shows with which system 
 | **Figure 2:** Uploading External Alignments |
 
 ## ETARAs Alignment Format
-TO BE DONE
+In the following, the ETARA alignment format is represented as a JSON schema.This is a declarative language that allows you to annotate and validate JSON documents. The advantage of a JSON schema is the clear structure and a possibility to clearly describe the ETARA alignment format. Furthermore, it provides a clear human- and machine-readable documentation. This allows us to validate the loaded alignments in an automated way.
 
 ```
 {
@@ -90,20 +90,28 @@ TO BE DONE
 }
 ```
 
+An example of a valid alignment is given in the following example. It consists of two mappings between the relation `title` and `title` and `publishedAsPartOf -> title` and `container-title`.
+
 ```
 {
     "system": "System A",
     "alignments": [
         {
-            "metrics": {"confidence": 1},
-            "relation_path": [{"path": ["https://dblp.org/rdf/schema-2020-07-01#title"]}],
+            "metrics": {
+              "confidence": 1,
+              "data_availability": 1
+            },
+            "relation_path": [{"path": ["https://www.example.com/publication#title"]}],
             "api_path": ["title"]
         },
         {
-            "metrics": {"confidence": 1},
+            "metrics": {
+              "confidence": 1,
+              "data_availability": 0.5
+            },
             "relation_path": [{"path": [
-                "https://dblp.org/rdf/schema-2020-07-01#publishedAsPartOf",
-                "https://dblp.org/rdf/schema-2020-07-01#title"
+                "https://www.example.com/publication#publishedAsPartOf",
+                "https://www.example.com/publication#title"
             ]}],
             "api_path": ["container-title"]
         }
@@ -111,6 +119,10 @@ TO BE DONE
     "name": "System A: movieDb - movieApi"
 }
 ```
+
+The ETARA Alignemnt scheme allows many different metrics.In the example above, two metrics are captured. On the one hand the metric `confidence`, which indicates how secure system A is with this mapping and on the other hand `data_availability`, which describes how often this field occurs in a JSON response. This flexible design makes it possible to visualize and use different metrics in the alignment cube.
+
+It is similar with the mappings themselves.It is possible to create simple 1:1 mappings, such as `title` and `title`, or more complex 1:1 mappings that require traversing the knowledge base first.An example of this is the mapping `title` and `publishedAsPartOf -> title`.
 
 ## Basic Interpretation
 As described in detail by [Ivanova et al.](https://link.springer.com/chapter/10.1007/978-3-319-68288-4_24) two ontologies and their alignment can be seen as a bipartite network of mappings between individual concepts in two different ontologies. Hence, a matrix represents a single alignment between two ontologies/schemas. We have modified this definition slightly and consider rows as relations from an underlying RDF database and columns as paths in the JSON or XML responses of an API in our implementation. This change makes it easy to apply the principle behind alignment cubes to alignments between RDF databases and RESTful Web APIs. Stacking several matrices, i.e., several alignments, creates an Alignment Cube.
