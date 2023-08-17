@@ -2,11 +2,13 @@
 Alignment Cube allows an interactive visual exploration and evaluation of alignments. It is possible to analyze alignments on the level of individual correspondences. Since it was initially designed for dense dynamic networks in the first place, an advantage consists of its scalability. Hence, it allows to visualize the performance history of an alignment system and therefore allows a comparison of the alignment results of a system when different parameters are tuned or core algorithms are changed.
 
 ## Loading Alignments
-TO BE DONE
+In order to fill the Alignment Cube with data, the data to be visualized must first be selected, as shown in Figure 1. With the button "Add Gold Standard" a Gold Stand Alignment, created with ETARA's Gold Standard Builder, can be added as a data set. With the button "Upload Alignment" alignments from other systems can be loaded.
 
 | ![alignment_selection](https://github.com/ETARA-Benchmark-System/.github/assets/4719393/a5c61d01-3858-47b2-ba2d-dbef50757d67) |
 |:--:| 
 | **Figure 1:** Selection of Gold Standard Alignments |
+
+Figure 2 shows an overview of the loaded alignments. It shows with which system the alignments have been created and how many mappings are contained in the alignments. With the button "Generate Alignment Cube" the loaded alignments can be visualized.
 
 | ![alignment_selection_3](https://github.com/ETARA-Benchmark-System/.github/assets/4719393/f2c0d78b-bb84-4e0e-ac41-c6c1b6d4a486) |
 |:--:| 
