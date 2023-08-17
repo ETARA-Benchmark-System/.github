@@ -38,13 +38,8 @@ Subsumption mappings are simply mappings between two relations that are not equi
 After all mappings for a single entity between the RDF database and the Web API response have been determined, users can call the next entity and determine further mappings. The more mappings a user specifies, the more accurate the final alignment, as it ensures that the data does not contain any outliers, but also that rarer relations, data errors, or any edge cases in general are discovered. To highlight users new relations, which were not present in the previous mapping attempts, are marked in green as shown in Figure 4. This way, relations that appear for the first time are not simply "lost" and can even be searched for specifically.
 
 ## Final Alignment Adjustments
-
-TO BE DONE
+The last step is to be directed to the view of the preliminary alignments.There, as shown in Figure 5, the previous mappings are listed.These are created by a simple heuristic in which the most frequently hit mappings during the mapping phase are preselected. However, the selected alignments can be adjusted via the edit button.
 
 | ![preliminary_alignment](https://github.com/ETARA-Benchmark-System/.github/assets/4719393/f6222d99-6831-441a-a043-1fdc59c83ab5) |
 |:--:| 
 | **Figure 5:** Preliminary Alignment |
-
-|  | 
-|:--:| 
-| **Figure 6:** Alignment Adjustments |
