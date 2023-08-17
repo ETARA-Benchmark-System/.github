@@ -127,15 +127,17 @@ It is similar with the mappings themselves.It is possible to create simple 1:1 m
 ## Basic Interpretation
 As described in detail by [Ivanova et al.](https://link.springer.com/chapter/10.1007/978-3-319-68288-4_24) two ontologies and their alignment can be seen as a bipartite network of mappings between individual concepts in two different ontologies. Hence, a matrix represents a single alignment between two ontologies/schemas. We have modified this definition slightly and consider rows as relations from an underlying RDF database and columns as paths in the JSON or XML responses of an API in our implementation. This change makes it easy to apply the principle behind alignment cubes to alignments between RDF databases and RESTful Web APIs. Stacking several matrices, i.e., several alignments, creates an Alignment Cube.
 
-TO BE DONE
+The color of each entry of the alignment cube is determined randomly, so that entries in dense alignment cubes can be easily distinguished from each other. Often alignments come with additional meta information, e.g., a confidence score of the individual mappings. These metrics are used to determine the size of the entries in the alignment cube (i.e., the individual cubes themselves). This allows to clearly see, for example, how the level of confidence in a mapping changes when tuning parameters of alignment systems. This feature allows to visualize the performance history of an alignment system. We can analyze more precisely which effects, for example, parameter tuning has on the alignment results or whether a change of the algorithm really has an improved effect on the alignments or only on individual mappings. Furthermore, not only alignment systems change, but also the databases itself are subject to (data) evolution. By the constant extension of databases, changing of structure/schemas or correction of errors, the performance of an alignment system may change over time.
 
 | ![alignment_cube](https://github.com/ETARA-Benchmark-System/.github/assets/4719393/8c45272e-e8ee-44b0-bddc-7064e99f9d6b) |
 |:--:| 
 | **Figure 3:** 3D View of the Alignment Cube |
 
+To analyze such effects in more detail, the visualization offers a variety of options. The representation of the different alignments in a cube allows the restriction to four trivial views. The 3D view (see Figure 3) visualizes the cube in its entirety using three dimensions, e.g., API paths, RDF relations, and a set of different alignments. Based on this overview, the user gets a compact presentation of the number of alignments, as well as the number, distribution, and metric value of the mappings. It allows interactive actions such as zooming and rotating to analyze and explore the data in the regions of interest in more detail. The remaining three views are created by viewing individual layers from the cube in isolation (see Figure 4 to 6). These reduced views can bypass the classical disadvantages of a 3D view, e.g. distorted depth perception and overlapping of objects. 
+
 | ![history_layer](https://github.com/ETARA-Benchmark-System/.github/assets/4719393/0f23dce4-fcd6-4748-abd8-ab90701a4053) |
 |:--:| 
-| **Figure 4:** History Layer |
+| **Figure 4:** History or System Layer |
 
 | ![api_view](https://github.com/ETARA-Benchmark-System/.github/assets/4719393/1e0e169c-ff9d-47cd-9a79-6c4b11b433b1) |
 |:--:| 
