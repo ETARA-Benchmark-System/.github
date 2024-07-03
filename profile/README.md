@@ -14,3 +14,29 @@ ETARA (Evaluation Toolkit for API and RDF Alignment) is a toolkit to support the
 * [Documentation](https://github.com/ETARA-Benchmark-System/.github/blob/main/profile/documentation.md)
 * [Downloads](https://github.com/ETARA-Benchmark-System/.github/blob/main/profile/downloads.md)
 
+# How to Cite
+```
+@inproceedings{zeimetz_om_2023,
+  author       = {Tobias Zeimetz and
+                  Maurice B{\"{u}}sching and
+                  Fabian Birringer and
+                  Christoph Otter and
+                  Daniel Zeiler and
+                  Ralf Schenkel},
+  editor       = {Pavel Shvaiko and
+                  J{\'{e}}r{\^{o}}me Euzenat and
+                  Ernesto Jim{\'{e}}nez{-}Ruiz and
+                  Oktie Hassanzadeh and
+                  C{\'{a}}ssia Trojahn},
+  title        = {Evaluation toolkit for {API} and {RDF} alignment},
+  booktitle    = {Proceedings of the 18th International Workshop on Ontology Matching
+                  co-located with the 22nd International Semantic Web Conference {(ISWC}
+                  2023), Athens, Greece, November 7, 2023},
+  series       = {{CEUR} Workshop Proceedings},
+  volume       = {3591},
+  pages        = {49--60},
+  publisher    = {CEUR-WS.org},
+  year         = {2023},
+  url          = {https://ceur-ws.org/Vol-3591/om2023\_LTpaper5.pdf},
+}
+```
